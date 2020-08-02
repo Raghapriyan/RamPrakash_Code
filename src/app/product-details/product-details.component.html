@@ -1,0 +1,6 @@
+<p>product-details works!</p>
+
+<p *ngFor="let eachProd of prodDetails" class="eachProd">
+    <span>{{ eachProd }}</span><br/>  
+    <button (click)="addProd(eachProd)">Add To Cart</button>
+</p>

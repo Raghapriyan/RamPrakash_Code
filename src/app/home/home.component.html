@@ -1,5 +1,25 @@
-<div class="content-wrapper">
+<!-- <div class="content-wrapper">
     <p>{{ myName }} works!</p>
 
     <button (click)="sendData()">Send Data</button>
-</div>
+</div> -->
+
+
+<!-- Header -->
+<p>
+    Welcome to Shopping!
+    Dated: {{ todayDate | date:"fullDate" | lowercase }}
+</p>
+
+<input type="number" [(ngModel)] = "exponentNumber"/>
+
+<p>
+    Exponent Number:
+    {{ exponentNumber | exponent : 2 : 2 : 10 }}
+</p>
+
+<!-- Product Details -->
+<app-product-details></app-product-details>
+
+<!-- Bottom Cart -->
+<app-bottom-cart style="margin-top: 100px"></app-bottom-cart>

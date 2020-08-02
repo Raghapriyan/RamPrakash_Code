@@ -1,17 +1,17 @@
-<div class="content-wrapper">
+<!-- <div class="content-wrapper">
 
   <p>{{ heading }}</p>
-  Page Number: {{ pageNo }}
+  Page Number: {{ pageNo }} -->
 
   <!-- Click Function -->
-  <button (click)="changePageNumber()">Change my Page Number</button>
+  <!-- <button (click)="changePageNumber()">Change my Page Number</button>
   <br/>
 
-  <app-home [myName] = "childName" (valueFromChild)="receiveData($event)"></app-home>
+  <app-home [myName] = "childName" (valueFromChild)="receiveData($event)"></app-home> -->
 
   <!-- Structural Directives In Angualar -->
 
-  <span *ngIf="showItem == 1"> This is Item 1</span>
+  <!-- <span *ngIf="showItem == 1"> This is Item 1</span>
   <span *ngIf="showItem == 2"> This is Item 2</span>
   <br/><br/><br/>
   <ng-container [ngSwitch] = "showItem">
@@ -36,4 +36,7 @@
   <input type="text" [(ngModel)]="childName" />
 
   <p>Value From Child: {{ childData }}</p>
-</div>
+</div> -->
+
+
+<router-outlet></router-outlet>

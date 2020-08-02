@@ -1,0 +1,18 @@
+<div class="selected-list">
+    <table>
+        <thead>
+            <tr> 
+                <th>S.No</th>
+                <th>Product</th>    
+                <th>Quantity</th>        
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let eachProd of selectedProduct; let i = index">
+                <td>{{ i + 1}}</td>
+                <td>{{ eachProd.name}}</td> 
+                <td>{{ eachProd.qty}}</td>            
+            </tr>
+        </tbody>
+    </table>
+</div>
